@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!--Kirk Kaminer-->
+<!--AVF-1211-->
+
+<html>
+<head>
+	<title>Camera</title>
+	<meta charset="UTF-8" />
+	<meta type="robots" content="index,follow" />
+	<meta name="description" content="project 1" />
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--CSS-->
+	<link rel="stylesheet" href="../camera/css/style.css" />
+
+</head>
+<body>
+	<!--Div Container-->
+	<div class="container">
+		<!--Title-->
+		<div class="title">
+			<h1>Camera</h1><br><br>
+		</div>
+
+		<a class="btn" href="../native.html">BACK</a><br>
+
+		<!--Camera-->				
+		<div id="camera" class="grid_1">
+			<ul>
+				<li><a class="capBtn" onclick="capturePhoto();">Take a Picture</a></li>
+	    		<li><a class="capEditBtn" onclick="capturePhotoEdit();">Capture a Pic &amp; Edit</a></li>
+	   	 		<li><a class="libBtn" onclick="getPhoto(pictureSource.PHOTOLIBRARY);">Choose From Photo Library</a></li>
+	    		<li><a class="albBtn" onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">Choose From Photo Album</a></li>
+	    	</ul>
+				<img style="display:none;width:60px;height:60px;" id="smallImg" src="" />
+	    		<img style="display:none;" id="largeImg" src="" />			
+		</div><br>	
+
+	</div>
+	<!--jQuery-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../cordova-2.2.0.js"></script>
+	<script type="text/javascript" src="../camera/js/main.js"></script>
+
+</body>
+</html>
+

@@ -1,10 +1,50 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+
+<!--Kirk Kaminer-->
+<!--AVF-1211-->
+
 <html>
 <head>
-<title>Cordova</title>
-<script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"></script>
+	<title>Demo App</title>
+	<meta charset="UTF-8" />
+	<meta type="robots" content="index,follow" />
+	<meta name="description" content="project 1" />
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--CSS-->
+	<link rel="stylesheet" href="css/style.css" />
+
 </head>
 <body>
-<h1>Hello World</h1>
+	<!--Div Container-->
+	<div class="container">
+		<!--Title-->
+		<div class="title"><br>
+			<img src="img/logo.png">
+		</div>
+
+		<!--Demo App-->				
+		<div id="nav" class="grid_1">
+			<ul>
+				<li><a href="link/devInfo/devInfo.html" id="devInfo">Developer Information</a></li> 
+				<li><a href="link/disRef/disRef.html" id="disRef">Discussion &amp; Refelections</a></li>
+				<li><a href="link/native/native.html" id="native">(PhoneGap) Native Features</a></li>
+				<li><a href="link/api/api.html" id="api">API Data Resources</a></li>	
+			</ul>	
+		</div>
+
+		<!--Copyright-->
+		<div id="copyright">
+			<p>&copy; 2012 Wes Kaminer Demo App</p>
+		</div>	
+
+	</div>
+	<!--jQuery-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="cordova-2.2.0.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
 </body>
 </html>
+
