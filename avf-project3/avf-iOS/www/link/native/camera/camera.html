@@ -28,12 +28,14 @@
 
 		<!--Camera-->				
 		<div id="camera" class="grid_1">
-			<button class="capBtn" onclick="capturePhoto();">Capture Photo</button> <br>
-    		<button class="capEditBtn" onclick="capturePhotoEdit();">Capture &amp; Edit</button> <br>
-   	 		<button class="libBtn" onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Library</button><br>
-    		<button class="albBtn" onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Album</button><br>
-    		<img style="display:none;width:60px;height:60px;" id="smallImg" src="" />
-    		<img style="display:none;" id="largeImg" src="" />		
+			<ul>
+				<li><a class="capBtn" onclick="capturePhoto();">Take a Picture</a></li>
+	    		<li><a class="capEditBtn" onclick="capturePhotoEdit();">Capture a Pic &amp; Edit</a></li>
+	   	 		<li><a class="libBtn" onclick="getPhoto(pictureSource.PHOTOLIBRARY);">Choose From Photo Library</a></li>
+	    		<li><a class="albBtn" onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">Choose From Photo Album</a></li>
+	    	</ul>
+				<img style="display:none;width:60px;height:60px;" id="smallImg" src="" />
+	    		<img style="display:none;" id="largeImg" src="" />			
 		</div><br>	
 
 	</div>
