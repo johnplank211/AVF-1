@@ -5,10 +5,10 @@
 $(function() {
   $.getJSON("http://search.twitter.com/search.json?q=sci%20fi&rpp=10&include_entities=true&result_type=popular&callback=?",
             function(data) {
-            $("#recent")
+            $("#twitterFeed")
             .html("<p>Twitter Feed Load Succsessful.</p>");
             for (i=0, j=data.results.length; i<j; i++) {
-                $("#twitter")
+                $("#apiData")
                     .append("<li>" +
                             "<p>" +
                             "<img src='" + data.results[i].profile_image_url + "' />" +
@@ -26,10 +26,10 @@ $(function() {
 $(function() {
   $.getJSON("http://search.twitter.com/search.json?q=sci%20fi&rpp=10&include_entities=true&result_type=recent&callback=?",
             function(data) {
-            $("#recent")
+            $("#twitterFeed")
                 .html("<p>Twitter Feed Load Succsessful.</p>");
             for (i=0, j=data.results.length; i<j; i++) {
-                $("#twitter")
+                $("#apiData")
                     .append("<li>" +
                             "<p>" +
                             "<img src='" + data.results[i].profile_image_url + "' />" +
